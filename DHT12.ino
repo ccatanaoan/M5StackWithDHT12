@@ -26,8 +26,8 @@ void loop() {
   }
   M5.update();
 
-  humidity = dht12.readHumidity() + 23;
-  fahrenheit = dht12.readTemperature(FAHRENHEIT);
+  humidity = dht12.readHumidity() + 24;
+  fahrenheit = dht12.readTemperature(FAHRENHEIT) + 0.5;
 
   Serial.print("Temp : ");
   M5.Lcd.print("Temp : ");
